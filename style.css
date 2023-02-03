@@ -1,0 +1,56 @@
+* {
+    font-family: sans-serif;
+}
+img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1em;
+    transform: rotate(20deg);
+    cursor: crosshair;
+}
+iframe {
+    position: absolute;
+    z-index: -1;
+    /* Prevent horizontal scrollbar */
+    width: 98%;
+    /* Height is hardcoded, no better solution has been found so far */
+    height: 500em;
+    pointer-events: none;
+}
+#search-object {
+    position: absolute;
+    z-index: 2;
+}
+#score {
+    background-color: black;
+    border-radius: 2em;
+    color:white;
+    padding: 1em;
+    border: 0.1em solid white;
+    box-shadow: 0 0 1em 0.05em rgba(0, 0, 0, 35%);
+}
+#info {
+    border-radius: 2em;
+    position: absolute;
+    z-index: 1;
+    top: 1vmin;
+    right: 3vmin;
+    pointer-events: none;
+}
+#timer {
+    text-align: center;
+    background-color: white;
+    border-radius: 2em;
+    color: black;
+    padding: 1em;
+    margin-right: 0.5em;
+    border: 0.1em solid black;
+    box-shadow: 0 0 1em 0.05em rgba(0, 0, 0, 35%);
+}
+#timer-count {
+    font-weight: bolder;
+}
+#score-count {
+    font-weight: bolder;
+}
